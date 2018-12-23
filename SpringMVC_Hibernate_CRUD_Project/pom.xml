@@ -18,6 +18,7 @@
 			</plugin>
 		</plugins>
 	</build>
+
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<!-- Java -->
@@ -38,6 +39,9 @@
 		<!-- Log4j -->
 		<log4j.version>1.2.17</log4j.version>
 
+
+
+
 	</properties>
 	<dependencies>
 		<!-- JUnit Dependency for unit testing -->
@@ -47,6 +51,7 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
+
 
 		<!-- Servlet API -->
 		<dependency>
@@ -62,16 +67,6 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-
-
-		<!-- JSP API -->
-		<dependency>
-			<groupId>javax.servlet.jsp</groupId>
-			<artifactId>jsp-api</artifactId>
-			<version>2.2</version>
-			<scope>provided</scope>
-		</dependency>
-
 
 		<!-- Apache Commons FileUpload -->
 		<dependency>
@@ -158,6 +153,15 @@
 			<artifactId>log4j</artifactId>
 			<version>${log4j.version}</version>
 		</dependency>
+
+		<!-- Hikari connection pool -->
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-hikaricp -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-hikaricp</artifactId>
+			<version>5.3.7.Final</version>
+		</dependency>
+
 
 		<!-- bootstrap jars -->
 		<dependency>
