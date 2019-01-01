@@ -38,12 +38,9 @@
 
 		<!-- Log4j -->
 		<log4j.version>1.2.17</log4j.version>
-
-
-
-
 	</properties>
 	<dependencies>
+
 		<!-- JUnit Dependency for unit testing -->
 		<dependency>
 			<groupId>junit</groupId>
