@@ -39,11 +39,12 @@ public class HibernateUtil {
 		return sessionFactory.getCurrentSession().createQuery("FROM" + entityClass.getName()).list();
 	}
 
+	@SuppressWarnings("unchecked")
 	public <T> List<T> fetchAll(String query) {
 		return sessionFactory.getCurrentSession().createNativeQuery(query).list();
 	}
 
-	private <T> T fetchById(Serializable id, Class<T> entityClass) {
+	public <T> T fetchById(Serializable id, Class<T> entityClass) {
 		return sessionFactory.getCurrentSession().get(entityClass, id);
 	}
 }
