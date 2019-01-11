@@ -2,6 +2,8 @@ package com.eagle.dao;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import com.eagle.entity.Employee;
 import com.eagle.util.HibernateUtil;
 
@@ -9,6 +11,7 @@ import com.eagle.util.HibernateUtil;
  * @author Rohit
  *
  */
+@Repository
 public class EmployeeDAOImpl implements EmployeeDAO {
 	public EmployeeDAOImpl() {
 		super();
