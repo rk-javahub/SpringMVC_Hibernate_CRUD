@@ -12,6 +12,8 @@ import com.eagle.util.HibernateUtil;
 public class EmployeeDAOImpl implements EmployeeDAO {
 	public EmployeeDAOImpl() {
 		super();
+		System.out.println("EmployeeDAO constructor called");
+		
 	}
 
 	@Autowired

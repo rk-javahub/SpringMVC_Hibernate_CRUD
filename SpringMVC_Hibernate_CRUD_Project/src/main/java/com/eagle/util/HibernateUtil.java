@@ -16,6 +16,12 @@ public class HibernateUtil {
 	@Autowired
 	private SessionFactory sessionFactory;
 
+	public HibernateUtil() {
+		super();
+		System.out.println("HibernateUtil constructor ");
+
+	}
+
 	public <T> Serializable create(final T entity) {
 		return sessionFactory.getCurrentSession().save(entity);
 	}
