@@ -31,7 +31,7 @@
 		<spring-security.version>4.0.4.RELEASE</spring-security.version>
 
 		<!--MySQL -->
-		<mysql.version>8.0.12</mysql.version>
+		<mysql.version>8.0.16</mysql.version>
 
 		<!-- Hibernate -->
 		<hibernate.version>5.2.10.Final</hibernate.version>
